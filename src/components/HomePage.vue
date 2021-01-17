@@ -1,11 +1,11 @@
 <template>
-  <v-container>
+  <div>
     <Navbar />
     <Intro />
     <Features />
     <Stats />
     <Footer />
-  </v-container>
+  </div>
 </template>
 
 <script>

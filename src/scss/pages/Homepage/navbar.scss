@@ -1,7 +1,33 @@
-.folly {
-  &.text {
-    font-size: large;
-    color: red;
-    font-family: "Times New Roman", Times, serif;
+.navbar {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.6ch;
+  &.appname {
+    color: rgb(53, 53, 53);
+    font: 21px 'Comic Neue', cursive;
+  }
+  &.navtitles{
+    color: grey;
+    font: 200 20px 'Comic Neue', cursive;
+    margin-left: 2.5rem;
+  }
+  &.button{
+    margin-right: 1rem;
+    color:#1c64f2;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 10%;
+  }
+  &.mobilesidebar{
+    .navdirectmob{
+      width: 100%;
+      text-align: left;
+    }
+    .navlogmob{
+      width: 100%;
+      color: #1c64f2;
+    }
   }
 }
+
