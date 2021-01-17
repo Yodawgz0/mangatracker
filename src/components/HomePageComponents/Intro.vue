@@ -25,10 +25,8 @@
       </desktop>
     </div>
     <div v-else class="text-center">
-      <mobile >
-        <div class="intro heading1 mobile" >
-          CURRENTLY IN ALPHA
-        </div>
+      <mobile>
+        <div class="intro heading1 mobile">CURRENTLY IN ALPHA</div>
         <div>
           <div class="intro heading2 mobile">
             <h2>Cross-Site</h2>
@@ -45,7 +43,9 @@
           </p>
         </div>
         <div>
-          <v-btn color="primary" class="intro btn mobile"> Start tracking now</v-btn>
+          <v-btn color="primary" class="intro btn mobile">
+            Start tracking now</v-btn
+          >
         </div>
         <div>
           <img src="../../assets/anime_tracker.png" class="intro imgmobile" />
