@@ -1,0 +1,98 @@
+//Add Most Commonly used colors and margins here
+
+.text-center {
+  text-align: center;
+}
+
+.space-top {
+  margin-top: 20px;
+  &.short {
+    margin-top: 10px;
+  }
+  &.medium {
+    margin-top: 15px;
+  }
+  &.super-short {
+    margin-top: 5px;
+  }
+  &.long {
+    margin-top: 40px;
+  }
+  &.extra-long {
+    margin-top: 80px;
+  }
+}
+
+space-below {
+  margin-bottom: 20px;
+
+  &.super-short {
+    margin-bottom: 5px;
+  }
+
+  &.short {
+    margin-bottom: 10px;
+  }
+
+  &.medium {
+    margin-bottom: 15px;
+  }
+
+  &.long {
+    margin-bottom: 40px;
+  }
+
+  &.super-long,
+  &.extra-long {
+    margin-bottom: 80px;
+  }
+}
+
+.space-right {
+  margin-right: 10px;
+
+  &.medium {
+    margin-right: 15px;
+  }
+
+  &.long {
+    margin-right: 20px;
+  }
+
+  &.short {
+    margin-right: 5px;
+  }
+}
+
+.space-left {
+  margin-left: 10px;
+
+  &.short {
+    margin-left: 5px;
+  }
+
+  &.medium {
+    margin-left: 15px;
+  }
+
+  &.long {
+    margin-left: 25px;
+  }
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.p1 {
+  padding: 1rem;
+}
+
+.no-decoration {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blue-color {
+  color: #1c64f2;
+}
