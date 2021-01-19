@@ -2,37 +2,58 @@
     .stats_padding{
         padding: 25px;
     }
-    &.heading {
-      font-size: 2.25rem;
-      line-height: 2.5rem;
-      font-family: 'Montserrat', sans-serif;
+    .class1{
+      color: #085ff5;
     }
-    &.body{
+    .class2{
+      color: purple;
+    }
+    .txtprops{
+      text-transform: none;
+    }
+    .cardsmtopmargin{
+      margin-top: 2.5rem;
+    }
+    &.headerpropeties{
+      font-size: 2.25rem;
+      line-height: 2.3rem;
+      font-weight: 800;
+    }
+    &.paragraphpropeties{
         margin-top: 1rem;
         color: grey;
-        text-align: center;
         font-size: 1.25rem;
-        font-family: 'Roboto', sans-serif;
     }
-    &.checkbutton{
-      text-align: center;
-      text-transform: none;
-      color: white;
+    &.btnbdrprops{
+      border-radius: .375rem;
+      transition: opacity;
     }
     &.cardtitle{
-      color: #1c64f2;
-      font-family:'Montserrat', sans-serif;
-      font-size: 3rem;
+      font-weight: 800;
+      font-size: 300%;
       text-align: center;
     }
     &.cardsubtitle{
-      font-family:'Roboto', sans-serif;
       color: grey;
-      font-size: 1.25rem;
+      font-size: 120%;
       font-weight: 500;
       text-align: center;
     }
-    .mangacolorstats{
-      color: #1c64f2;
+    &.cardproportions{
+      width: 25%;
+      min-width: 200;
+    }
+
+  }
+
+@media only screen and (max-width: 600px) {
+  .mobileheading {
+    font-size: 200%;
+    line-height: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    }
+  .mobilecardwidth{
+    min-width: 300;
     }
   }
