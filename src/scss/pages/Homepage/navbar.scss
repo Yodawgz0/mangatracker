@@ -5,29 +5,46 @@
   padding-top: 0.6ch;
   &.appname {
     color: rgb(53, 53, 53);
-    font: 21px 'Comic Neue', cursive;
+    font: 21px "Comic Neue", cursive;
   }
-  &.navtitles{
+  &.navtitles {
     color: grey;
-    font: 200 20px 'Comic Neue', cursive;
+    font: 200 20px "Comic Neue", cursive;
     margin-left: 2.5rem;
   }
-  &.button{
+
+  &.button {
     margin-right: 1rem;
-    color:#1c64f2;
-    font-weight: bold;
+    color: #1c64f2;
+    font-weight: 600;
     text-transform: capitalize;
     border-radius: 10%;
   }
-  &.mobilesidebar{
-    .navdirectmob{
+  &.mobilesidebar {
+    .navdirectmob {
       width: 100%;
       text-align: left;
     }
-    .navlogmob{
+    .navlogmob {
       width: 100%;
       color: #1c64f2;
     }
   }
 }
-
+.PopAuthBox {
+  width: 300px;
+  border-radius: 30px;
+}
+.inputtextlog{
+  border-radius: 7px;
+}
+.inputtexttitle{
+  margin-bottom: -30px;
+}
+.inputsubmittext{
+  text-transform: none;
+  color: white;
+}
+.paddingneg{
+  margin-top: -1.5rem;
+}

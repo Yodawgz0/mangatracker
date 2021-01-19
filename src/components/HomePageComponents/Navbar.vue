@@ -13,22 +13,46 @@
       Supported Sites
     </div>
     <v-spacer></v-spacer>
-    <v-btn
-      v-if="$vuetify.breakpoint.mdAndUp"
-      text
-      class="navbar button"
-      elevation="2"
+    <v-dialog
+      max-width="330"
+      overlay-opacity="0.8"
+      overlay-color="#6b7280"
+      v-model="LoginDialog"
     >
-      Log in
-    </v-btn>
-    <v-btn
-      v-if="$vuetify.breakpoint.mdAndUp"
-      text
-      class="navbar button"
-      elevation="2"
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          text
+          v-if="$vuetify.breakpoint.mdAndUp"
+          class="navbar button"
+          elevation="2"
+          v-bind="attrs"
+          v-on="on"
+        >
+          Log in
+        </v-btn>
+      </template>
+      <LoginCard />
+    </v-dialog>
+    <v-dialog
+      max-width="330"
+      overlay-opacity="0.8"
+      overlay-color="#6b7280"
+      v-model="RegisterDialog"
     >
-      Register
-    </v-btn>
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          v-if="$vuetify.breakpoint.mdAndUp"
+          text
+          class="navbar button"
+          elevation="2"
+          v-bind="attrs"
+          v-on="on"
+        >
+          Register
+        </v-btn>
+      </template>
+      <RegisterCard />
+    </v-dialog>
 
     <v-dialog
       v-model="dialog"
@@ -71,17 +95,17 @@
 </template>
 
 <script>
+import LoginCard from "./AuthenticationLogins/LoginCard";
+import RegisterCard from "./AuthenticationLogins/RegisterCard";
 export default {
+  components: { LoginCard, RegisterCard },
   name: "Navbar",
 
   data() {
     return {
-      dialog: false,
+      LoginDialog: false,
+      RegisterDialog: false,
     };
   },
 };
 </script>
-
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap");
-</style>

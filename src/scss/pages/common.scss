@@ -1,7 +1,48 @@
 //Add Most Commonly used colors and margins here
+.body,.v-application{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.v-dialog{
+  border-radius: 1rem;
+  max-height: 80%;
+}
 
 .text-center {
   text-align: center;
+}
+.fontbold {
+  font-weight: bold;
+  &.weight1{
+    font-weight:400 ;
+  }
+  &.weight2{
+    font-weight:600 ;
+  }
+  &.weight3{
+    font-weight:700 ;
+  }
+  &.weight4{
+    font-weight:800 ;
+  }
+}
+
+.fontsize {
+  &.size1{
+    font-size: 0.7rem;
+  }
+  &.size2{
+    font-size: 0.8rem;
+  }
+  &.size3{
+    font-size: 0.9rem;
+  }
+  &.size4{
+    font-size: 1rem;
+  }
+  &.size5{
+    font-size: 1.2rem;
+  }
 }
 
 .space-top {
@@ -62,6 +103,9 @@ space-below {
   &.short {
     margin-right: 5px;
   }
+  &.extralong {
+    margin-right: 35px;
+  }
 }
 
 .space-left {
@@ -78,6 +122,9 @@ space-below {
   &.long {
     margin-left: 25px;
   }
+  &.extralong {
+    margin-left: 50px;
+  }
 }
 
 .m-auto {
@@ -86,6 +133,10 @@ space-below {
 
 .p1 {
   padding: 1rem;
+}
+
+.borderradius1{
+  border-radius: 10px;
 }
 
 .no-decoration {
