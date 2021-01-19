@@ -7,7 +7,7 @@
     </v-row>
 
     <v-row align="center" justify="space-around">
-      <div class="stats body">
+      <div class="stats subbody">
         Get the latest releases from supported sites hourly.<br />
         With new sites added monthly, always stay up to date with your favourite
         series
