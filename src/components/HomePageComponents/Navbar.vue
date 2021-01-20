@@ -22,7 +22,7 @@
       <template v-slot:activator="{ on, attrs }">
         <v-btn
           text
-          v-if="$vuetify.breakpoint.mdAndUp"
+          v-if="$vuetify.breakpoint.mdAndUp && !isLoggedIn()"
           class="navbar button"
           elevation="2"
           v-bind="attrs"
@@ -41,7 +41,7 @@
     >
       <template v-slot:activator="{ on, attrs }">
         <v-btn
-          v-if="$vuetify.breakpoint.mdAndUp"
+          v-if="$vuetify.breakpoint.mdAndUp && !isLoggedIn()"
           text
           class="navbar button"
           elevation="2"
@@ -53,6 +53,16 @@
       </template>
       <RegisterCard />
     </v-dialog>
+    <v-btn
+      text
+      v-if="$vuetify.breakpoint.mdAndUp && isLoggedIn()"
+      class="navbar button"
+      elevation="2"
+      v-bind="attrs"
+      v-on="on"
+    >
+      Go to DashBoard
+    </v-btn>
 
     <v-dialog
       v-model="dialog"
@@ -88,7 +98,12 @@
             v-model="LoginDialog"
           >
             <template v-slot:activator="{ on, attrs }">
-              <v-btn text class="navlogmob" v-bind="attrs" v-on="on"
+              <v-btn
+                text
+                class="navlogmob"
+                v-if="!isLoggedIn()"
+                v-bind="attrs"
+                v-on="on"
                 >Log in</v-btn
               >
             </template>
@@ -101,12 +116,20 @@
               v-model="RegisterDialog"
             >
               <template v-slot:activator="{ on, attrs }">
-                <v-btn text class="navlogmob" v-bind="attrs" v-on="on"
+                <v-btn
+                  text
+                  class="navlogmob"
+                  v-if="!isLoggedIn()"
+                  v-bind="attrs"
+                  v-on="on"
                   >Register</v-btn
                 >
               </template>
               <RegisterCard />
             </v-dialog>
+          </v-list-item>
+          <v-list-item>
+            <v-btn text class="navlogmob" v-if="isLoggedIn()">Register</v-btn>
           </v-list-item>
         </v-list>
       </v-card>
@@ -115,17 +138,23 @@
 </template>
 
 <script>
+//import  {isLoggedIn}  from "../utils/auth-service";
+
 import LoginCard from "./AuthenticationLogins/LoginCard";
 import RegisterCard from "./AuthenticationLogins/RegisterCard";
 export default {
   components: { LoginCard, RegisterCard },
   name: "Navbar",
-
+  methods: {
+    isLoggedIn() {
+      return false; //isLoggedIn();
+    }
+  },
   data() {
     return {
       LoginDialog: false,
-      RegisterDialog: false,
+      RegisterDialog: false
     };
-  },
+  }
 };
 </script>
