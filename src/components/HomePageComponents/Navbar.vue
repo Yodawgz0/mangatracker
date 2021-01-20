@@ -82,11 +82,31 @@
           <v-list-item>
             <v-btn text class="navdirectmob">Supported Sites</v-btn>
           </v-list-item>
+          <v-dialog
+            max-width="330"
+            overlay-color="#6b7280"
+            v-model="LoginDialog"
+          >
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn text class="navlogmob" v-bind="attrs" v-on="on"
+                >Log in</v-btn
+              >
+            </template>
+            <LoginCard />
+          </v-dialog>
           <v-list-item>
-            <v-btn text class="navlogmob">Log in</v-btn>
-          </v-list-item>
-          <v-list-item>
-            <v-btn text class="navlogmob">Register</v-btn>
+            <v-dialog
+              max-width="330"
+              overlay-color="#6b7280"
+              v-model="RegisterDialog"
+            >
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn text class="navlogmob" v-bind="attrs" v-on="on"
+                  >Register</v-btn
+                >
+              </template>
+              <RegisterCard />
+            </v-dialog>
           </v-list-item>
         </v-list>
       </v-card>
