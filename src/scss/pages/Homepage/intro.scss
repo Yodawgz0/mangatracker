@@ -1,4 +1,4 @@
-.intro{
+.intro{    
     letter-spacing: 0.025em;    
      &.heading1{
         color: gray;            
@@ -6,6 +6,7 @@
         text-transform: uppercase;
         font-weight: 600;   
         margin-top: 1rem; 
+        margin-left: auto;
         &.mobile{
             margin-bottom: 1rem;
         } 
@@ -25,6 +26,7 @@
         }       
     }
     &.heading3{
+        display: block;
         margin-top: 0.2rem; 
         font-size: 1.25rem;        
         font-weight: lighter;
@@ -34,20 +36,28 @@
             margin-bottom: 1rem;
         }
     }   
-    &.btn{
+    
+    &.header_btn:hover{
+        color:skyblue;
+        
+    }
+    &.header_btn{
+        color: honeydew;
         text-transform: none;
         margin-bottom: 1rem;
+        padding: 15%;
+       border-radius: 0.50rem;
         &.mobile{
             margin-bottom: 2rem;
         }
     }
-    &.image{               
-        width: 30rem;
-        height: 18rem;        
+    &.header_image{               
+        width: 200%;
+        height: 100%;        
     } 
-    &.imgmobile{
-        width: 40rem;
-        height: 20rem;
+    &.header_image_mobile{
+        width: 80%;
+        height: 40%; 
         flex: auto;
         text-align: center;
         justify-content: center;
