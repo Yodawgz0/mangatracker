@@ -49,7 +49,9 @@
       </v-list-item>
       <v-list-item>
         <v-btn block elevation="2" medium color="#1c64f2">
-          <div class="inputsubmittext font">Sign In</div></v-btn
+          <div class="inputsubmittext font" @click="handleLogin">
+            Sign In
+          </div></v-btn
         >
       </v-list-item>
       <v-list-item>
@@ -69,6 +71,8 @@
 </template>
 
 <script>
+//import  login  from "../utils/auth-service";
+
 export default {
   name: "LoginCard",
 
@@ -79,7 +83,7 @@ export default {
       show: false,
       email: undefined,
       rules: {
-        email: (v) => !!(v || "").match(/@/) || "Please enter a valid email",
+        email: (v) => !!(v || "").match(/\S+@\S+\.\S+/) || "Please enter a valid email",
         length: (len) => (v) =>
           (v || "").length >= len ||
           `Invalid character length, required ${len}`,
@@ -89,6 +93,11 @@ export default {
           ) ||
           "Password must contain an upper case letter, a numeric character, and a special character",
         required: (v) => !!v || "This field is required",
+      },
+      methods: {
+        handleLogin() {
+          //login();
+        },
       },
     };
   },

@@ -1,6 +1,7 @@
 <template>
   <v-card>
     <v-form>
+    <form @submit.prevent="handleSubmit">
       <v-list class="p1">
         <v-list-item>
           <div class="fontbold weight2 fontsize size3 inputtexttitle">
@@ -78,19 +79,30 @@
           </div>
         </v-list-item>
       </v-list>
-    </v-form>
+    </form>
   </v-card>
 </template>
 
 <script>
+//import axios from "axios";
 export default {
-  name: "LoginCard",
+  name: "RegisterCard",
 
   data() {
     return {
       dialog: false,
-      password: undefined,
-      email: undefined,
+      password: "",
+      email: "",
+      passwordconf: "",
+      methods: {
+        handleSubmit() {
+          // const userData = {
+          //   email: this.email,
+          //  password: this.password,
+          //  passwordconf: this.passwordconf,
+          //  };
+        },
+      },
       rules: {
         email: (v) => !!(v || "").match(/@/) || "Please enter a valid email",
         length: (len) => (v) =>
