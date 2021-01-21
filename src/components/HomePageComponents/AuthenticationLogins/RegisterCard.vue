@@ -1,5 +1,6 @@
 <template>
   <v-card>
+    <v-form>
     <form @submit.prevent="handleSubmit">
       <v-list class="p1">
         <v-list-item>
