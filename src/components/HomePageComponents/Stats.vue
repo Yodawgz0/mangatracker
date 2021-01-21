@@ -27,7 +27,7 @@
 
     <div class="cardsmtopmargin">
       <v-row class="stats_padding" justify="center">
-        <v-card width="300">
+        <v-card width="30%" class="hidden-xs-only">
           <v-card-text>
             <div class="blue-color stats cardtitle">
               18217
@@ -37,8 +37,8 @@
             Manga Series Tracked
           </v-card-subtitle>
         </v-card>
-        <v-divider vertical></v-divider>
-        <v-card width="300">
+
+        <v-card width="30%" class="hidden-xs-only">
           <v-card-text>
             <div class="blue-color stats cardtitle">
               178766
@@ -48,8 +48,8 @@
             Manga Entries Created
           </v-card-subtitle>
         </v-card>
-        <v-divider vertical></v-divider>
-        <v-card width="300">
+
+        <v-card width="30%" class="hidden-xs-only">
           <v-card-text>
             <div class="blue-color stats cardtitle">
               18
@@ -60,6 +60,41 @@
           </v-card-subtitle>
         </v-card>
       </v-row>
+    </div>
+
+    <div>
+      <v-card class="stats cardproportionsmbview hidden-sm-and-up">
+        <v-card-text>
+          <div class="blue-color stats cardtitle">
+            18217
+          </div>
+        </v-card-text>
+        <v-card-subtitle class="stats cardsubtitle">
+          Manga Series Tracked
+        </v-card-subtitle>
+      </v-card>
+
+      <v-card class="hidden-sm-and-up">
+        <v-card-text>
+          <div class="blue-color stats cardtitle">
+            178766
+          </div>
+        </v-card-text>
+        <v-card-subtitle class="stats cardsubtitle">
+          Manga Entries Created
+        </v-card-subtitle>
+      </v-card>
+
+      <v-card class="hidden-sm-and-up">
+        <v-card-text>
+          <div class="blue-color stats cardtitle">
+            18
+          </div>
+        </v-card-text>
+        <v-card-subtitle class="stats cardsubtitle">
+          Supported Sites
+        </v-card-subtitle>
+      </v-card>
     </div>
   </v-container>
 </template>

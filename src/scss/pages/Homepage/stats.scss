@@ -2,12 +2,6 @@
     .stats_padding{
         padding: 25px;
     }
-    .class1{
-      color: #085ff5;
-    }
-    .class2{
-      color: purple;
-    }
     .txtprops{
       text-transform: none;
     }
@@ -29,7 +23,7 @@
       transition: opacity;
     }
     &.cardtitle{
-      font-weight: 800;
+      font-weight: 900;
       font-size: 300%;
       text-align: center;
     }
@@ -40,10 +34,12 @@
       text-align: center;
     }
     &.cardproportions{
-      width: 25%;
+      width: 30%;
       min-width: 200;
     }
-
+    &.cardproportionsmbview{
+      min-width: 300;
+    }
   }
 
 @media only screen and (max-width: 600px) {
