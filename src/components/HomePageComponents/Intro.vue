@@ -1,10 +1,10 @@
 <template>
-  <v-container>
+  <div style="padding:2%;">
     <div v-if="!isMobile()" class="intro">
       <desktop>
         <v-row class="intro heading1"> CURRENTLY IN ALPHA </v-row>
         <v-row>
-          <v-col cols="7">
+          <v-col cols="6">
             <div class="intro heading2">
               <h2>Cross-Site</h2>
               <span class="intro heading2 text2">
@@ -52,7 +52,7 @@
         </div>
       </mobile>
     </div>
-  </v-container>
+  </div>
 </template>
 
 <script>
