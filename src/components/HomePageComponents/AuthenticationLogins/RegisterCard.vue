@@ -1,6 +1,5 @@
 <template>
   <v-card>
-    <form @submit.prevent="handleSubmit">
       <v-list class="p1">
         <v-list-item>
           <div class="fontbold weight2 fontsize size3 inputtexttitle">
@@ -63,8 +62,8 @@
           ></v-text-field>
         </v-list-item>
         <v-list-item>
-          <v-btn block elevation="2" medium color="#1c64f2">
-            <div class="inputsubmittext font">Register</div></v-btn
+          <v-btn block elevation="2" medium color="#1c64f2" @click="handleSubmit">
+            <div class="inputsubmittext font" >Register</div></v-btn
           >
         </v-list-item>
         <v-list-item> <v-divider></v-divider></v-list-item>
@@ -73,12 +72,12 @@
           <div
             style="padding-left: 5px"
             class="fontsize size3 fontbold weight2"
+            
           >
             Sign In
           </div>
         </v-list-item>
       </v-list>
-    </form>
   </v-card>
 </template>
 
@@ -86,14 +85,7 @@
 //import axios from "axios";
 export default {
   name: "RegisterCard",
-
-  data() {
-    return {
-      dialog: false,
-      password: "",
-      email: "",
-      passwordconf: "",
-      methods: {
+   methods: {
         handleSubmit() {
           // const userData = {
           //   email: this.email,
@@ -102,6 +94,14 @@ export default {
           //  };
         },
       },
+
+  data() {
+    return {
+      dialog: false,
+      password: "",
+      email: "",
+      passwordconf: "",
+      // eslint-disable-next-line
       rules: {
         email: (v) => !!(v || "").match(/@/) || "Please enter a valid email",
         length: (len) => (v) =>
