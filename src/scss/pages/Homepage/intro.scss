@@ -36,18 +36,26 @@
             margin-bottom: 1rem;
         }
     }   
-    &.btn{
+    
+    &.header_btn:hover{
+        color:skyblue;
+        
+    }
+    &.header_btn{
+        color: honeydew;
         text-transform: none;
         margin-bottom: 1rem;
+        padding: 15%;
+       border-radius: 0.50rem;
         &.mobile{
             margin-bottom: 2rem;
         }
     }
-    &.image{               
+    &.header_image{               
         width: 200%;
         height: 100%;        
     } 
-    &.imgmobile{
+    &.header_image_mobile{
         width: 80%;
         height: 40%; 
         flex: auto;

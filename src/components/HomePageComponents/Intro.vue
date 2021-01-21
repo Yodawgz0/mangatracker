@@ -1,5 +1,5 @@
 <template>
-  <div style="padding:2%;">
+  <div style="padding: 2%">
     <div v-if="!isMobile()" class="intro">
       <desktop>
         <v-row class="intro heading1"> CURRENTLY IN ALPHA </v-row>
@@ -16,10 +16,13 @@
               Integrated with manga sites big and small, always stay up to date
               with your favourite manga series.
             </p>
-            <v-btn color="primary" class="intro btn"> Start tracking now</v-btn>
+            <v-btn large color="primary" class="intro header_btn"> Start tracking now</v-btn>
           </v-col>
           <v-col cols="3">
-            <img src="../../assets/anime_tracker.png" class="intro image" />
+            <img
+              src="../../assets/anime_tracker.png"
+              class="intro header_image"
+            />
           </v-col>
         </v-row>
       </desktop>
@@ -43,12 +46,20 @@
           </p>
         </div>
         <div>
-          <v-btn color="primary" class="intro btn mobile">
+          <v-btn
+            large
+            light
+            class="intro header_btn mobile"
+            color="primary"
+          >
             Start tracking now</v-btn
           >
         </div>
         <div>
-          <img src="../../assets/anime_tracker.png" class="intro imgmobile" />
+          <img
+            src="../../assets/anime_tracker.png"
+            class="intro header_image_mobile"
+          />
         </div>
       </mobile>
     </div>
