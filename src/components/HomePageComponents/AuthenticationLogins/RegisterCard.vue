@@ -1,10 +1,5 @@
 <template>
   <v-card>
-<<<<<<< HEAD
-=======
-    <v-form>
-    <form @submit.prevent="handleSubmit">
->>>>>>> 39a442e63c7fb77fe55d2fc397127201c24ae5e3
       <v-list class="p1">
         <v-list-item>
           <div class="fontbold weight2 fontsize size3 inputtexttitle">
