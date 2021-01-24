@@ -1,5 +1,5 @@
 <template>
-  <v-container class="stats">
+  <v-container class="stats space-top extra-long">
     <div>
       <h1 class="text-center stats headerpropeties">
         Track manga series across sites

@@ -1,0 +1,33 @@
+.feat{
+    .featuresectionpadding{
+        padding-left: 12px;
+    }
+    &.featminiheading{
+        text-align: center;
+        letter-spacing: .025em;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    &.featheading{
+        text-align: center;
+        font-size: 2.25rem;
+        font-weight: 900;
+        letter-spacing: -.025em;
+    }
+    &.featsubheading{
+        font-size: 1.125rem;
+        font-weight: 500;       
+    }
+    &.featcardheading{
+        font-weight: 200;
+        color: black;
+    }
+    &.featiconbox{
+        height: 3rem;
+        width: 3rem;
+        background-color:  #1c64f2;
+        border-radius: 10px;
+        text-align: center;
+        align-content: center;
+    }
+}
