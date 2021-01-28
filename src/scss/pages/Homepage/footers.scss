@@ -1,0 +1,48 @@
+.footer{
+    margin-left: 2%;
+    margin-right: 2%; 
+    font-size: 1rem;
+
+    .heading1{
+        color: rgba(159,166,178);
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 0em;
+        ._col2{
+            margin-left:10px;
+        }
+       ._col4{
+            overflow-wrap: break-word;
+        }
+        }
+    .sub_heading{
+        margin-top: 1rem;
+        margin-left: 3%;
+        padding: 0em;
+        color: rgba(107,114,128);
+        .option_1{
+            margin-left: 0%;
+            padding: 0%;
+            }
+        .option_2{
+            margin-left: 0%;
+            padding: 0em;
+         }
+        .option_3{
+            padding: 0%;
+            margin-left: 0em;
+         }
+        .option_4{
+            padding: 0%;
+            margin-left: 0em;
+        }
+    }
+    .footer_details{
+        margin-left: 2%;
+    }
+    .email_text{
+        max-width: 100%;
+        border: 50%;
+        padding:0 5% 0 0;
+    }
+}
