@@ -1,20 +1,24 @@
 .intro{    
     letter-spacing: 0.025em;    
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
      &.heading1{
         color: gray;            
-        font-size: 1rem;
+        font-size: 0.8(vw+vh);
         text-transform: uppercase;
         font-weight: 600;   
-        margin-top: 1rem; 
+        margin-top: 2rem; 
         margin-left: auto;
         &.mobile{
+            font-size: 1rem;
             margin-bottom: 1rem;
         } 
     }
     &.heading2{  
-        letter-spacing: 0.005em;
-        line-height: 0%;            
-        font: 900 3rem 'Roboto', cursive;
+        letter-spacing: 0.005em;        
+        font-weight: 900;    
+        line-height:normal;    
+        font-size: 4vw;
+        margin-bottom: 1rem;
         &.mobile{
             font-size: 2rem;
             flex: auto;
@@ -28,12 +32,14 @@
     &.heading3{
         display: block;
         margin-top: 0.2rem; 
-        font-size: 1.25rem;        
+        font-size: 1.25(vw+vh);        
         font-weight: lighter;
         --text-opacity: 1;
+        margin-bottom: 1rem;
         color: rgba(75,85,99,var(--text-opacity));
         &.mobile{
             margin-bottom: 1rem;
+            font-size: 1.25rem;  
         }
     }   
     
@@ -51,9 +57,9 @@
             margin-bottom: 2rem;
         }
     }
-    &.header_image{               
-        width: 200%;
-        height: 100%;        
+    &.header_image{ 
+        width: 45vw;
+        height: 20vw;        
     } 
     &.header_image_mobile{
         width: 80%;

@@ -6,9 +6,10 @@
         <v-row>
           <v-col cols="6">
             <div class="intro heading2">
-              <h2>Cross-Site</h2>
+              Cross-Site
+              <br>
               <span class="intro heading2 text2">
-                <h2>manga tracker</h2>
+                manga tracker
               </span>
             </div>
             <p class="intro heading3">
