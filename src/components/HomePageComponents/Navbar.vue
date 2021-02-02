@@ -2,7 +2,6 @@
   <v-app-bar
     color="white"
     elevate-on-scroll
-    scroll-target="#scrolling-techniques-7"
     class="navbar"
   >
     <v-app-bar-title class="navbar appname">UwU MangaTracker</v-app-bar-title>
@@ -153,7 +152,8 @@ export default {
   data() {
     return {
       LoginDialog: false,
-      RegisterDialog: false
+      RegisterDialog: false,
+      dialog: false
     };
   }
 };
