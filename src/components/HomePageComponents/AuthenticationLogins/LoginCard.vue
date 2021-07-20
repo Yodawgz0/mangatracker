@@ -7,7 +7,7 @@
       <v-list-item>
         <v-text-field
           v-model="email"
-          :rules="[rules.email]"
+          :rules="[rules.email, rules.required]"
           autocomplete="email"
           solo
           placeholder="you@example.com"
@@ -30,8 +30,8 @@
           class="inputtextlog"
           v-model="password"
           :append-icon="show ? 'mdi-eye' : 'mdi-eye-off'"
-          :rules="[rules.password, rules.length(6)]"
           :type="show ? 'text' : 'password'"
+          :rules="[rules.required]"
           counter
           @click:append="show = !show"
           required
@@ -79,19 +79,13 @@ export default {
   data() {
     return {
       dialog: false,
-      password: undefined,
+      password: "",
+      email: "",
       show: false,
-      email: undefined,
+      checkbox: false,
       rules: {
-        email: (v) => !!(v || "").match(/\S+@\S+\.\S+/) || "Please enter a valid email",
-        length: (len) => (v) =>
-          (v || "").length >= len ||
-          `Invalid character length, required ${len}`,
-        password: (v) =>
-          !!(v || "").match(
-            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$/
-          ) ||
-          "Password must contain an upper case letter, a numeric character, and a special character",
+        email: (v) =>
+          !!(v || "").match(/\S+@\S+\.\S+/) || "Please enter a valid email",
         required: (v) => !!v || "This field is required",
       },
       methods: {

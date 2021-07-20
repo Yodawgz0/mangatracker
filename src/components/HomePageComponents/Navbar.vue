@@ -1,9 +1,5 @@
 <template>
-  <v-app-bar
-    color="white"
-    elevate-on-scroll
-    class="navbar"
-  >
+  <v-app-bar color="white" elevate-on-scroll class="navbar">
     <v-app-bar-title class="navbar appname">UwU MangaTracker</v-app-bar-title>
     <div v-if="$vuetify.breakpoint.mdAndUp" class="navbar navtitles">
       Features

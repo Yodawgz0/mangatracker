@@ -7,7 +7,7 @@
       <v-list-item>
         <v-text-field
           v-model="email"
-          :rules="[rules.email]"
+          :rules="[rules.email, rules.required]"
           autocomplete="email"
           solo
           placeholder="you@example.com"
@@ -30,7 +30,7 @@
           class="inputtextlog paddingneg"
           ref="password"
           v-model="password"
-          :rules="[rules.password, rules.length(6)]"
+          :rules="[rules.password, rules.length(6), rules.required]"
           counter
           type="password"
           required
